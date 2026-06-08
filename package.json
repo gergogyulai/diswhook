@@ -23,7 +23,7 @@
   },
   "repository": "gergogyulai/diswhook",
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --minify",
+    "build": "tsup src/index.ts --format esm --dts",
     "lint": "npx prettier --write src"
   },
   "devDependencies": {
