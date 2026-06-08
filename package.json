@@ -23,12 +23,13 @@
   },
   "repository": "gergogyulai/diswhook",
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts",
+    "build": "tsc && dts-bundle-generator -o dist/index.d.ts src/index.ts",
     "lint": "npx prettier --write src"
   },
   "devDependencies": {
     "@types/node": "^25.9.2",
     "discord-api-types": "^0.38.48",
+    "dts-bundle-generator": "^9.5.1",
     "tsup": "^8.5.0",
     "typescript": "^6.0.3"
   }
