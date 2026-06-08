@@ -1,22 +1,15 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "experimentalDecorators": true,
-        "module": "commonjs",
-        "resolveJsonModule": true,
-        "allowJs": true,
-        "declaration": true,
-        "sourceMap": true,
-        "outDir": "lib",
-        "removeComments": true,
-        "importsNotUsedAsValues": "remove",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "alwaysStrict": true,
-        "skipLibCheck": true,
-    },
-    "include": [
-        "src"
-    ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "declaration": true,
+    "strict": true,
+    "types": ["node"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": [
+    "src"
+  ]
 }
