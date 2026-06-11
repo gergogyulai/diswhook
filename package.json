@@ -24,6 +24,7 @@
   "repository": "gergogyulai/diswhook",
   "scripts": {
     "build": "tsc && dts-bundle-generator -o dist/index.d.ts src/index.ts",
+    "prepack": "npm run build",
     "lint": "npx prettier --write src"
   },
   "devDependencies": {
