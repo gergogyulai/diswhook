@@ -14,11 +14,32 @@
     "typescript",
     "nodejs"
   ],
+  "sideEffects": false,
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./webhook": {
+      "types": "./dist/webhook.d.ts",
+      "default": "./dist/webhook.js"
+    },
+    "./message-builder": {
+      "types": "./dist/message-builder.d.ts",
+      "default": "./dist/message-builder.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "default": "./dist/types.js"
+    },
+    "./builders/button": {
+      "types": "./dist/builders/button.d.ts",
+      "default": "./dist/builders/button.js"
+    },
+    "./builders/embed": {
+      "types": "./dist/builders/embed.d.ts",
+      "default": "./dist/builders/embed.js"
     }
   },
   "repository": "gergogyulai/diswhook",
@@ -27,9 +48,11 @@
     "prepack": "npm run build",
     "lint": "npx prettier --write src"
   },
+  "dependencies": {
+    "discord-api-types": "^0.38.48"
+  },
   "devDependencies": {
     "@types/node": "^25.9.2",
-    "discord-api-types": "^0.38.48",
     "dts-bundle-generator": "^9.5.1",
     "tsup": "^8.5.0",
     "typescript": "^6.0.3"

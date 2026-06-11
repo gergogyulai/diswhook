@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "declaration": false,
+    "declaration": true,
     "rootDir": "src",
     "outDir": "dist",
     "strict": true,
